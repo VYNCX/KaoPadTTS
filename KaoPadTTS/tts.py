@@ -8,8 +8,7 @@ from KaoPadTTS.tokenizer import (
     AUDIO_OFFSET,
     NUM_AUDIO_TOKENS,
     END_OF_SPEECH_TOKEN_ID,
-    START_OF_SPEECH_TOKEN_ID,
-    CODEC_FRAME_RATE
+    START_OF_SPEECH_TOKEN_ID
 )
 from KaoPadTTS.text.text_normalizer import split_text_whitespace, normalize_text
 
@@ -208,6 +207,7 @@ class KaoPadTTS:
             generated_tokens.append(tok_id)
 
         elapsed = time.time() - t0
+        CODEC_FRAME_RATE = 25.0
         if generated_tokens:
             dur_sec = len(generated_tokens) / CODEC_FRAME_RATE
             print(f"Generated {len(generated_tokens)} tokens "
