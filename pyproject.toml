@@ -3,7 +3,7 @@ name = "KaoPadTTS"
 version = "0.1.0"
 description = "An 85M-parameter autoregressive Thai TTS model that generates natural speech efficiently, suitable for real-time and low-resource environments."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.10"
 dependencies = [
     "huggingface_hub",
     "pythainlp",
