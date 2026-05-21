@@ -1,7 +1,7 @@
 import re
 from pythainlp.util import num_to_thaiword, normalize, maiyamok
 from ssg import syllable_tokenize
-from eng2tha import transliterator 
+from .eng2tha import transliterator 
 
 def chunk_words(text, max_chars=150):
     sylls = syllable_tokenize(text)
