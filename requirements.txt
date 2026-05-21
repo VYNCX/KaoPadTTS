@@ -1,0 +1,7 @@
+huggingface_hub
+soundfile
+torch
+pythainlp
+ssg
+onnxruntime
+git+https://github.com/Aratako/MioCodec
