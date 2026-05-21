@@ -3,7 +3,7 @@ import numpy as np
 import torch
 import os 
 import onnxruntime as ort
-from tokenizer import (
+from KaoPadTTS.tokenizer import (
     Tokenizer,
     AUDIO_OFFSET,
     NUM_AUDIO_TOKENS,
@@ -11,7 +11,7 @@ from tokenizer import (
     START_OF_SPEECH_TOKEN_ID,
     CODEC_FRAME_RATE
 )
-from text.text_normalizer import split_text_whitespace, normalize_text
+from KaoPadTTS.text.text_normalizer import split_text_whitespace, normalize_text
 
 class KaoPadTTS:
     def __init__(self, model_id: str = "VIZINTZOR/KaoPadTTS-85M", local_path: str = None, device: str = "cpu"):
