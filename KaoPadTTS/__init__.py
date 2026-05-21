@@ -1,3 +1,3 @@
-from .KaoPadTTS import tts
+from .tts import KaoPadTTS
 
-__all__ = ["tts"]
+__all__ = ["KaoPadTTS"]
