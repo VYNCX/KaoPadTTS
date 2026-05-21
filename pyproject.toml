@@ -12,7 +12,7 @@ dependencies = [
     "torch",
     "torchaudio",
     "onnxruntime",
-    "git+https://github.com/Aratako/MioCodec"
+    "miocodec @ git+https://github.com/Aratako/MioCodec@main"
 ]
 
 [build-system]
